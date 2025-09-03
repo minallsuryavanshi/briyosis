@@ -176,7 +176,7 @@ const Products = () => {
 
 
 {/* Custom Formulations CTA */}
-<section className="section-padding py-4 bg-accent/10 text-gray-800">
+<section className="section-padding py-4 bg-gradient-to-br from-primary/50 text-gray-800">
   <div className="container mx-auto px-10">
     <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -220,7 +220,7 @@ const Products = () => {
           asChild
           size="lg"
           variant="outline"
-          className="bg-white/10 border-gray-300 text-gray-800 hover:bg-gray-100 hover:text-primary transition-all duration-300 mt-4"
+          className="bg-white/10 border-white text-gray-800 hover:bg-gray-100 hover:text-primary transition-all duration-300 mt-4"
         >
           <Link to="/contact" className="flex items-center justify-center gap-2">
             Discuss More
@@ -240,7 +240,7 @@ const Products = () => {
         <div className="space-y-3">
           <Button
             variant="outline"
-            className="bg-white/10 border-gray-300 text-gray-800 hover:bg-gray-100 hover:text-primary w-full flex items-center justify-center gap-2 transition-all duration-300"
+            className="bg-white/10 border-white text-gray-800 hover:bg-gray-100 hover:text-primary w-full flex items-center justify-center gap-2 transition-all duration-300"
             size="lg"
           >
             <Download className="h-5 w-5" />
@@ -250,7 +250,7 @@ const Products = () => {
           <Button
             asChild
             variant="outline"
-            className="bg-white/10 border-gray-300 text-gray-800 hover:bg-gray-100 hover:text-primary w-full transition-all duration-300"
+            className="bg-white/10 border-white text-gray-800 hover:bg-gray-100 hover:text-primary w-full transition-all duration-300"
             size="lg"
           >
             <Link to="flex items-center justify-center">Request Custom Quote</Link>

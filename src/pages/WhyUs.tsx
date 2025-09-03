@@ -94,7 +94,7 @@ const WhyUs = () => {
       {/* Header */}
       <section className="section-padding bg-gradient-brand text-gray-500">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in text-black">
             Why Choose Us?
           </h1>
           <p className="text-xl max-w-3xl mx-auto animate-slide-up">
@@ -253,12 +253,12 @@ const WhyUs = () => {
 
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-secondary text-gray-400 py-12">
+      <section className="section-padding bg-gradient-secondary py-12">
         <div className="container mx-auto text-center px-6 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
             Ready to Experience the Difference?
           </h2>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed text-gray-500">
+          <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed text-gray-500 text-gray-400">
             Join hundreds of satisfied clients who trust Briyosis Softcaps for their pharmaceutical manufacturing needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

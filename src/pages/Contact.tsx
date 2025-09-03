@@ -70,9 +70,9 @@ const Contact = () => {
         <div className="container-prose">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: Users, value: "500+", label: "Global Clients", color: "text-primary" },
-              { icon: Globe, value: "50+", label: "Countries Served", color: "text-gray-500" },
-              { icon: Award, value: "25+", label: "Years Experience", color: "text-orange-500" },
+              { icon: Users, value: "200+", label: "Global Clients", color: "text-primary" },
+              { icon: Globe, value: "25+", label: "Countries Served", color: "text-gray-500" },
+              { icon: Award, value: "20+", label: "Years Experience", color: "text-orange-500" },
               { icon: Shield, value: "100%", label: "Quality Assured", color: "text-green-500" }
             ].map((item, index) => (
               <Card key={index} className="text-center bg-white/70 backdrop-blur-xl border-white/20 hover:bg-white/90">

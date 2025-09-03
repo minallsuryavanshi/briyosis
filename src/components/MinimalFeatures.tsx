@@ -48,11 +48,11 @@ const MinimalFeatures = () => {
 
   const certifications = [
     "WHO-GMP Approved",
-    "ISO 9001:2015",
-    "HACCP Certified", 
+    "ISO 9001:2008",
+    "NAFDAC Certified", 
     "FDA Registered",
-    "Halal & Kosher",
-    "Global Standards"
+    "GMP Compliant Facility",
+    "Rigorous Quality"
   ];
 
   return (

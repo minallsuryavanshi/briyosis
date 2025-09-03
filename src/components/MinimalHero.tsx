@@ -28,7 +28,7 @@ const MinimalHero = () => {
       <div className="container-minimal">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8 animate-fade-in py-6 px-8">
             <div className="space-y-6">
               <Badge className="badge-primary">
                 <Shield className="w-4 h-4 mr-2" />
@@ -72,7 +72,7 @@ const MinimalHero = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-6 animate-slide-up">
+          <div className="grid grid-cols-2 gap-6 animate-slide-up px-8">
             {stats.map((stat, index) => (
               <div 
                 key={index}
@@ -90,14 +90,14 @@ const MinimalHero = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-20 pt-12 border-t border-border">
+        <div className="mt-5 pt-8 border-t border-border">
           <div className="text-center mb-8">
             <p className="text-sm font-medium text-muted-corporate">Trusted by leading pharmaceutical companies worldwide</p>
           </div>
           <div className="flex justify-center items-center space-x-12 opacity-60">
             <div className="flex items-center space-x-2">
               <Award className="w-5 h-5" />
-              <span className="text-sm font-medium">ISO 9001:2015</span>
+              <span className="text-sm font-medium">ISO 9001:2008</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield className="w-5 h-5" />

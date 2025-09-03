@@ -24,19 +24,14 @@ const MinimalNavigation = () => {
   ];
 
   return (
-    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-[var(--transition-smooth)] rounded-2xl w-[95%] max-w-7xl ${
-      isScrolled ? 'nav-floating backdrop-blur-md bg-background/95 border border-border shadow-[var(--shadow-clean)]' : 'nav-floating backdrop-blur-sm bg-background/80 border border-border/50 shadow-[var(--shadow-minimal)]'
-    }`}>
-      <div className="px-6">
+    <nav className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-[var(--transition-smooth)] rounded-2xl w-[95%] max-w-7xl ${isScrolled ? 'nav-floating backdrop-blur-md bg-background/95 border border-border shadow-[var(--shadow-clean)]' : 'nav-floating backdrop-blur-sm bg-background/80 border border-border/50 shadow-[var(--shadow-minimal)]'
+      }`}>
+      <div className="px-8">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">B</span>
-            </div>
-            <span className="text-xl font-bold text-corporate">
-              Briyosis Softcaps
-            </span>
+            <img src="/briyologo.png" alt="Briyosis Softcaps Logo" className="w-26 h-20" />
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -46,8 +41,7 @@ const MinimalNavigation = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-[var(--transition-fast)] hover:text-primary ${
-                    isActive ? "text-primary" : "text-muted-corporate"
+                  `text-sm font-medium transition-[var(--transition-fast)] hover:text-primary ${isActive ? "text-primary" : "text-muted-corporate"
                   }`
                 }
               >
@@ -61,11 +55,11 @@ const MinimalNavigation = () => {
             <div className="flex items-center space-x-4 text-sm text-muted-corporate">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
-                <span>+91-265-2334455</span>
+                <span>+91 9876543210</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="w-4 h-4" />
-                <span>info@briyosissoftcaps.com</span>
+                <span>info@bryiosis.com</span>
               </div>
             </div>
             <Button asChild size="sm" className="btn-primary">
@@ -91,8 +85,7 @@ const MinimalNavigation = () => {
                   key={item.name}
                   to={item.path}
                   className={({ isActive }) =>
-                    `block text-sm font-medium transition-[var(--transition-fast)] hover:text-primary ${
-                      isActive ? "text-primary" : "text-muted-corporate"
+                    `block text-sm font-medium transition-[var(--transition-fast)] hover:text-primary ${isActive ? "text-primary" : "text-muted-corporate"
                     }`
                   }
                   onClick={() => setIsOpen(false)}

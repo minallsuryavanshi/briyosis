@@ -95,7 +95,7 @@ const MinimalProducts = () => {
                 </div>
                 <Button 
                   variant="outline" 
-                  className="w-full btn-outline"
+                  className="w-full btn-outline hover:text-black"
                 >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
