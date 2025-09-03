@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corporate Minimal Design System - Professional & Modern */
+
+@layer base {
+:root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 7%;
+
+    /* Corporate Brand Colors - Minimal & Professional */
+    --primary: 221 83% 53%; /* Professional blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 221 83% 63%;
+    --primary-dark: 221 83% 43%;
+    
+    --secondary: 220 14% 96%; /* Subtle gray */
+    --secondary-foreground: 220 20% 7%;
+    
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+    
+    --neutral: 220 14% 96%;
+    --neutral-foreground: 220 20% 30%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 7%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 13% 46%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
+
+    /* Corporate Gradients - Subtle & Professional */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--background)), hsl(var(--neutral)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    
+    /* Professional Shadows */
+    --shadow-minimal: 0 1px 3px 0 hsl(220 13% 69% / 0.1), 0 1px 2px 0 hsl(220 13% 69% / 0.06);
+    --shadow-clean: 0 4px 6px -1px hsl(220 13% 69% / 0.1), 0 2px 4px -1px hsl(220 13% 69% / 0.06);
+    --shadow-professional: 0 10px 15px -3px hsl(220 13% 69% / 0.1), 0 4px 6px -2px hsl(220 13% 69% / 0.05);
+    --shadow-premium: 0 20px 25px -5px hsl(220 13% 69% / 0.1), 0 10px 10px -5px hsl(220 13% 69% / 0.04);
+    
+    /* Smooth Transitions */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 27% 8%;
+    --foreground: 220 14% 96%;
+
+    --card: 220 27% 10%;
+    --card-foreground: 220 14% 96%;
+
+    --popover: 220 27% 10%;
+    --popover-foreground: 220 14% 96%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 221 83% 63%;
+    --primary-dark: 221 83% 43%;
+
+    --secondary: 220 27% 15%;
+    --secondary-foreground: 220 14% 96%;
+
+    --muted: 220 27% 15%;
+    --muted-foreground: 220 14% 70%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 27% 18%;
+    --input: 220 27% 18%;
+    --ring: 221 83% 53%;
+    
+    --sidebar-background: 220 27% 8%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 27% 15%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 220 27% 18%;
+    --sidebar-ring: 221 83% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Corporate Button System */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--shadow-clean)] transition-[var(--transition-smooth)] font-medium tracking-normal;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-muted border border-border transition-[var(--transition-smooth)] font-medium;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-[var(--transition-smooth)] font-medium;
+  }
+
+  /* Professional Navigation */
+  .nav-minimal {
+    @apply backdrop-blur-md bg-background/95 border-b border-border shadow-[var(--shadow-minimal)] transition-[var(--transition-smooth)];
+  }
+
+  /* Corporate Cards */
+  .card-minimal {
+    @apply bg-card border border-border rounded-lg shadow-[var(--shadow-minimal)] hover:shadow-[var(--shadow-clean)] transition-[var(--transition-smooth)];
+  }
+  
+  .card-elevated {
+    @apply bg-card border border-border rounded-xl shadow-[var(--shadow-professional)] hover:shadow-[var(--shadow-premium)] transition-[var(--transition-smooth)] hover:-translate-y-1;
+  }
+
+  /* Professional Typography */
+  .text-corporate {
+    @apply text-foreground leading-relaxed;
+  }
+  
+  .text-muted-corporate {
+    @apply text-muted-foreground leading-relaxed;
+  }
+
+  /* Section Layouts */
+  .section-minimal {
+    @apply py-16 px-6 lg:px-8;
+  }
+  
+  .section-corporate {
+    @apply py-24 px-6 lg:px-8;
+  }
+
+  /* Container System */
+  .container-minimal {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .container-prose {
+    @apply max-w-4xl mx-auto;
+  }
+
+  /* Professional Shadows */
+  .shadow-corporate {
+    box-shadow: var(--shadow-professional);
+  }
+  
+  .shadow-elevated {
+    box-shadow: var(--shadow-premium);
+  }
+
+  /* Background Patterns */
+  .bg-grid-minimal {
+    background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+                      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-dots-minimal {
+    background-image: radial-gradient(circle, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Professional Gradients */
+  .bg-gradient-minimal {
+    background: var(--gradient-subtle);
+  }
+  
+  .bg-gradient-corporate {
+    background: var(--gradient-primary);
+  }
+
+  /* Corporate Text Gradients */
+  .text-gradient-corporate {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Minimal Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Professional Hover Effects */
+  .hover-lift {
+    @apply transition-[var(--transition-smooth)] hover:-translate-y-1 hover:shadow-[var(--shadow-clean)];
+  }
+  
+  .hover-scale {
+    @apply transition-[var(--transition-smooth)] hover:scale-105;
+  }
+
+  /* Corporate Focus States */
+  .focus-corporate {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  /* Input System */
+  .input-minimal {
+    @apply border border-border bg-background text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 transition-[var(--transition-fast)];
+  }
+
+  /* Badge System */
+  .badge-minimal {
+    @apply bg-secondary text-secondary-foreground border border-border;
+  }
+  
+  .badge-primary {
+    @apply bg-primary/10 text-primary border border-primary/20;
+  }
+}
