@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "/briyologo.png";
 
 const MinimalNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ const MinimalNavigation = () => {
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
-            <img src="/briyologo.png" alt="Briyosis Softcaps Logo" className="w-28 h-20" />
+            <img src={logo} alt="Briyosis Softcaps Logo" className="w-25 h-20" />
           </NavLink>
 
           {/* Desktop Navigation */}
