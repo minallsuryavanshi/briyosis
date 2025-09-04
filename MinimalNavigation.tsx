@@ -30,13 +30,9 @@ const MinimalNavigation = () => {
       <div className="px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">B</span>
-            </div>
-            <span className="text-xl font-bold text-corporate">
-              Briyosis Softcaps
-            </span>
+            <img src={logo} alt="Briyosis Softcaps Logo" className="w-25 h-20" />
           </NavLink>
 
           {/* Desktop Navigation */}
